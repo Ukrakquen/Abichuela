@@ -252,7 +252,7 @@ section h2 span {
 
 #video video {
     width: 90%;
-    max-width: 400px; /* Cambia este número para regular el tamaño máximo (ej. 350px si lo quieres aún más chico) */
+    max-width: 250px; /* Cambia este número para regular el tamaño máximo (ej. 350px si lo quieres aún más chico) */
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
