@@ -137,7 +137,7 @@ section h2 span {
 }
 
 
-/* CARDS */
+/* RECUERDOS (SOLO IMÁGENES) */
 
 #recuerdos {
     background: #f8eeee;
@@ -145,52 +145,22 @@ section h2 span {
 
 .cards {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .cards article {
     background: white;
-
-    box-shadow:
-        0 15px 40px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 .cards img {
     width: 100%;
     height: 350px;
-
     object-fit: cover;
-}
-
-.cards article > *:not(img) {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.cards small {
     display: block;
-
-    color: #a84c61;
-
-    margin-top: 25px;
-}
-
-.cards h3 {
-    font-family: Georgia, serif;
-    font-size: 28px;
-
-    margin-top: 10px;
-}
-
-.cards p {
-    color: #74696d;
-    line-height: 1.7;
-
-    padding-bottom: 30px;
 }
 
 
@@ -198,16 +168,13 @@ section h2 span {
 
 .quote {
     background: #a84c61;
-
     color: white;
-
     text-align: center;
 }
 
 .quote h2 {
     max-width: 900px;
     margin: auto;
-
     font-style: italic;
 }
 
@@ -220,21 +187,16 @@ section h2 span {
 
 .gallery {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
 .gallery img {
     width: 100%;
     height: 350px;
-
     object-fit: cover;
-
+    border-radius: 8px;
     transition: 0.4s;
-
     cursor: pointer;
 }
 
@@ -251,9 +213,9 @@ section h2 span {
 }
 
 #video video {
-    width: 90%;
-    max-width: 250px; /* Cambia este número para regular el tamaño máximo (ej. 350px si lo quieres aún más chico) */
-    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
@@ -275,14 +237,12 @@ section h2 span {
 .final p {
     max-width: 600px;
     margin: auto;
-
     line-height: 1.8;
 }
 
 .final h3 {
     font-family: Georgia, serif;
     color: #a84c61;
-
     margin-top: 30px;
 }
 
@@ -291,11 +251,8 @@ section h2 span {
 
 footer {
     background: #2b2023;
-
     color: white;
-
     text-align: center;
-
     padding: 30px;
 }
 
@@ -331,9 +288,5 @@ footer {
 
     section h2 {
         font-size: 40px;
-    }
-
-    #video video {
-        width: 100%;
     }
 }
